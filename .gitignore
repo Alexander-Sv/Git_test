@@ -1,0 +1,4 @@
+# ignore txt logs
+log/
+# ignore txt files
+Calc/*.txt
