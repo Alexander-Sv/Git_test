@@ -234,7 +234,6 @@ Create table #SECURITIES(
 
 		)
 
-
 Select T1.VALUE NAME_TYPE
 	, ','+ltrim(rtrim(T2.VALUE))+',' CODE_TYPE
 	, ','+ltrim(rtrim(T3.VALUE))+',' CODE_TYPE_PART
