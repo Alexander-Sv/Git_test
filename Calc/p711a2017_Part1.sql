@@ -105,7 +105,6 @@ Create Proc dbo.p711a2017_Part1(
     )
 as
 
-
 Declare @CodesLoro varchar(255)	Select @CodesLoro = CODE_TYPE from #SETTING_DEPO_ACC_TYPES where NAME_TYPE = 'кнпн'
 
 Declare @SUB_ACC smallint
