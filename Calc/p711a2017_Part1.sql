@@ -130,7 +130,6 @@ Select D.NUMBRANCH, 1 PART
 	, A.ID_ACCOUNT, DT.CODE DEPO_TYPE_CODE
 	, PAPER.ID_PAPER
 	, DEPO_ACC_OWNER.ID_CLIENT ID_CLIENT_OWNER
---	, case when @SUB_ACC = 1 and D.ID_CLIENT = 0 then S_SUB.SALDO else S.SALDO end PAPER_COUNT -- Обращение 79678. 25.07.2016
 	, case when @SUB_ACC = 1 and (D.ID_CLIENT = 0 or isNull(S_SUB.SALDO,0) <> 0) then S_SUB.SALDO else S.SALDO end PAPER_COUNT
 
 	, case when KEEPER.ID_CLIENT is null then null else  isnull(KEEPER.REDUCE_NAME, '')  end REGISTRATOR_NAME
