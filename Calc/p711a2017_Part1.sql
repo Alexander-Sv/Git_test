@@ -98,7 +98,7 @@ if exists (select * from sysobjects where id = object_id('dbo.p711a2017_Part1') 
     drop procedure dbo.p711a2017_Part1
 GO
 -----------------------------------------
--- in Git master branch!!!
+-- in Git newF branch!!!
 -----------------------------------------
 Create Proc dbo.p711a2017_Part1(
       @Date      datetime
